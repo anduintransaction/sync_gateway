@@ -66,7 +66,7 @@ func (h *handler) handleRoot() error {
 	response := map[string]interface{}{
 		"couchdb": "Welcome",
 		"version": LongVersionString,
-		"vendor":  db.Body{"name": ServerName, "version": VersionNumber},
+		"vendor":  db.Body{"name": ServerName, "version": fmt.Sprint(VersionNumber) + "-anduin"},
 	}
 	if h.privs == adminPrivs {
 		response["ADMIN"] = true

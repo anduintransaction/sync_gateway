@@ -1,6 +1,7 @@
 *.idea
 *.sublime-workspace
 *.walrus
+.DS_Store
 **/git_info.go.bak
 \#*
 *~
@@ -8,6 +9,7 @@
 \#*\#
 /bin
 /pkg
+/dist
 
 service/sg-windows/sg-windows
 service/sg-windows/sg-accel-service
